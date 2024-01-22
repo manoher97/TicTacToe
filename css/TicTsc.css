@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    font-size: 6vh;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.game-conteiner {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.comtainer {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: cadetblue;
+}
+
+.gameInfo {
+    padding: 0 35px;
+}
+
+.gameInfo h1 {
+    font-size: 7vh;
+}
+
+.Info {
+    font-size: 6vh;
+}
+
+#reset {
+    background-color: cadetblue;
+    padding: 4px 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 25px;
+}
+
+.imgBox img {
+    width: 0;
+    transition: width 1s ease-in;
+}
+
+.bt {
+    border-top: none;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.br {
+    border-right: 0;
+}
+
+@media only screen and (max-width: 700px){
+   .game-conteiner{ 
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+  } 
+} 
