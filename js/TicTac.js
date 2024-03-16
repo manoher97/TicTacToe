@@ -50,7 +50,7 @@ Array.from(boxes).forEach(element => {
             turn = changTurn();
             turnAudio.play();
             checkWin();
-            // music.play();
+            music.play();
 
             if (!isgameOver) {
                 document.getElementsByClassName("Info")[0].innerHTML = "Turn for  " + turn;
